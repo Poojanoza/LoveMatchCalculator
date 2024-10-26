@@ -1,0 +1,123 @@
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #ff5e5e;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            font-size: 16px;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ff5e5e;
+            box-shadow: 0 0 5px rgba(255, 94, 94, 0.5);
+        }
+
+        input[type="button"] {
+            background-color: #ff5e5e;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        input[type="button"]:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        input[type="button"]:hover:not(:disabled) {
+            background-color: #ff2e2e;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Responsive Styles */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 600px;
+                padding: 50px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            input[type="text"], input[type="button"] {
+                font-size: 18px;
+            }
+
+            #result {
+                font-size: 20px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            body {
+                padding: 20px;
+            }
+
+            .container {
+                max-width: 500px;
+                padding: 60px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            input[type="text"], input[type="button"] {
+                font-size: 20px;
+                padding: 14px;
+            }
+
+            #result {
+                font-size: 22px;
+            }
+        }
