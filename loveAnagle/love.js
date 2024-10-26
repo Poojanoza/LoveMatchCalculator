@@ -10,6 +10,15 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
+    // Function to enable or disable the button based on input validity
+    function checkInput() {
+        button.disabled = firstName.value.trim() === "" || secoundName.value.trim() === "";
+    }
+
+    // Add event listeners for real-time validation
+    firstName.addEventListener("input", checkInput);
+    secoundName.addEventListener("input", checkInput);
+
     button.addEventListener("click", function () {
         var randomNumber = Math.floor(Math.random() * 100); // Generate on each click
         var firstNameValue = firstName.value || "";
